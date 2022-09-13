@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class input {
+    public static void main(String[] args){
+        var s = new Scanner(System.in);
+        System.out.println("What is Bitcoin price today?");
+        Float bt = Float.valueOf(s.nextLine());
+
+        System.out.println("How much $ do you have?");
+        Float usd = Float.valueOf(s.nextLine());
+        if(bt == 0){
+            System.out.println("Division by 0 is not allowed!");
+        }else{System.out.println("You can buy" + usd/bt + "BTC");};
+    }
+
+}
